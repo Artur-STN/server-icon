@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- LINK FAVICON -->
+        <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+        <!-- LINK CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- LINK JAVASCRIPT -->
+        <script src="js/main.js"></script>
+
+        <!-- LINK FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+        <title>Server</title>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="user">
+
+                <i onclick="checkUser()" id="user" class="fas fa-user"></i>
+
+            </div>
+
+            <span class="barsDashed"></span>
+
+            <div class="cloud">
+
+                <i onclick="checkCloud()" id="cloud" class="fas fa-cloud"></i>
+
+            </div>
+
+            <div class="divBarsDashed">
+            
+                <span class="barsDashed"></span>
+            
+                <span class="barsDashed"></span>
+            
+                <span class="barsDashed"></span>
+            
+            </div>
+
+            <div class="divServers">
+
+                <div class="server">
+
+                    <i onclick="checkServer('serverNumber1')" id="serverNumber1" class="fas fa-server"></i>
+
+                </div>
+
+                <div class="server">
+
+                    <i onclick="checkServer('serverNumber2')" id="serverNumber2" class="fas fa-server"></i>
+
+                </div>
+
+                <div class="server">
+
+                    <i onclick="checkServer('serverNumber3')" id="serverNumber3" class="fas fa-server"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

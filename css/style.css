@@ -1,0 +1,192 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+
+    background: #0D1821;
+
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 70vw;
+    height: 55vh;
+
+}
+
+.user .fa-user,
+.cloud .fa-cloud,
+.divServers .server .fa-server {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0D1821;
+    color: #04E762;
+
+    font-size: 5rem;
+
+    border: 1px solid #04E762;
+    border-radius: 50%;
+
+    box-shadow: inset 5px -5px 10px #04E762;
+
+    text-align: center;
+
+    width: 120px;
+    height: 120px;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+
+}
+
+.user .fa-user:hover,
+.cloud .fa-cloud:hover,
+.divServers .server .fa-server:hover {
+
+    background: #04E762;
+    color: #0D1821;
+
+    box-shadow: 0 0 10px #04E762, inset 5px -5px 10px #19535F;
+
+    transform: scale(1.2);
+
+}
+
+.user .fa-user.disable,
+.cloud .fa-cloud.disable,
+.divServers .server .fa-server.disable {
+
+    background: transparent;
+    color: #04E7631A;
+
+    border: 1px solid;
+
+}
+
+.user .fa-user.disable:hover,
+.cloud .fa-cloud.disable:hover,
+.divServers .server .fa-server.disable:hover {
+
+    box-shadow: 0 0 5px #04E7631A;
+
+}
+
+.divServers {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    height: 100%;
+
+}
+
+.divBarsDashed {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    height: 50%;
+
+}
+
+span {
+
+    border: 1px dashed white;
+
+    width: 15vw;
+    height: 2px;
+
+    position: relative;
+
+}
+
+.divBarsDashed .barsDashed:nth-child(1) {
+
+    transform: rotate(165deg);
+
+}
+
+.divBarsDashed .barsDashed:nth-child(3) {
+
+    transform: rotate(195deg);
+
+}
+
+@media(max-width: 950px) {
+
+    .container {
+
+        flex-direction: column;
+
+    }
+
+    .divServers {
+
+        flex-direction: row;
+
+        width: 70vw;
+        height: 100px;
+
+    }
+
+    .divBarsDashed {
+
+        height: 2px;
+
+    }
+
+    .barsDashed {
+
+        width: 80vw;
+
+    }
+
+    .divBarsDashed .barsDashed:nth-child(1),
+    .divBarsDashed .barsDashed:nth-child(3) {
+
+        display: none;
+
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    .user .fa-user,
+    .cloud .fa-cloud,
+    .divServers .server .fa-server {
+
+        font-size: 3rem;
+
+        width: 100px;
+        height: 100px;
+
+    }
+
+}
