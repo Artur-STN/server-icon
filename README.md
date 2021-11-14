@@ -1,1 +1,1 @@
-artur-stn.github.io/server-icon
+https://artur-stn.github.io/server-icon
