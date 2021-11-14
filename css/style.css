@@ -46,8 +46,6 @@ body {
     border: 1px solid #04E762;
     border-radius: 50%;
 
-    box-shadow: inset 5px -5px 10px #04E762;
-
     text-align: center;
 
     width: 120px;
@@ -66,9 +64,9 @@ body {
     background: #04E762;
     color: #0D1821;
 
-    box-shadow: 0 0 10px #04E762, inset 5px -5px 10px #19535F;
+    text-shadow: 0 0 10px #0D1821;
 
-    transform: scale(1.2);
+    box-shadow: 0 0 10px #04E762;
 
 }
 
@@ -182,10 +180,25 @@ span {
     .cloud .fa-cloud,
     .divServers .server .fa-server {
 
-        font-size: 3rem;
+        font-size: 2.5rem;
 
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
+
+    }
+
+    .user .fa-user:hover,
+    .cloud .fa-cloud:hover,
+    .divServers .server .fa-server:hover {
+
+        background: #0D1821;
+        color: #04E762;
+
+    }
+
+    .divServers {
+
+        width: 80vw;
 
     }
 
